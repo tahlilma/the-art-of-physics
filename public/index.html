@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Art of Physics</title>
+<meta name="description" content="Twelve live, physically accurate simulations drawn as engineering-textbook plates: a half-car suspension, a cyclotron, the tumbling racket, chaotic pendulums, Kepler orbits and an RLC circuit.">
+<meta name="theme-color" content="#E1E4E2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D2443" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Art of Physics">
+<meta property="og:description" content="Twelve live, physically accurate simulations drawn as engineering-textbook plates: a half-car suspension, a cyclotron, the tumbling racket, chaotic pendulums, Kepler orbits and an RLC circuit.">
+<meta property="og:image" content="/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/stix-two-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/stix-two-text-latin-600-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script src="/assets/js/mathjax-config.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+</head>
+<body>
+<header class="mast">
+  <a class="brand" href="#top">The Art of Physics</a>
+  <nav>
+    <a href="#contents">Plates</a>
+    <a href="#notes" class="hide-s">Notes</a>
+    <button class="mode" id="mode" type="button" aria-pressed="false">Blueprint</button>
+  </nav>
+</header>
+<main id="top">
+  <section class="hero">
+    <h1 id="title"><span>The Art</span><span>of <span class="phys" id="phys"><span class="bl" aria-hidden="true"></span>Physics<svg id="physword" aria-hidden="true" focusable="false"></svg></span></span></h1>
+    <svg class="titledim" id="titledim" aria-hidden="true"></svg>
+    <p class="lede">Twelve plates from the dynamics of machines, planets and circuits. Nothing here is keyframed: every line is moved by a differential equation, integrated in your browser sixty times a second.</p>
+  </section>
+  <div id="first"></div>
+  <section class="contents" id="contents">
+    <h2>Plates</h2>
+    <ol id="toc"></ol>
+  </section>
+  <div id="rest"></div>
+  <section class="coda" id="notes">
+    <blockquote class="q">“Nature uses only the longest threads to weave her patterns.”<cite>Richard Feynman, <i>The Character of Physical Law</i> (1965)</cite></blockquote>
+    <div class="notes">
+      <h2>Notes on method</h2>
+      <p>Most plates are integrated with the classical fourth-order Runge–Kutta method at fixed steps of a few milliseconds of simulated time or less. The cyclotron uses the Boris scheme, which rotates velocity exactly in a magnetic field. The orbit uses leapfrog with steps that shrink near periapsis, and the cart is balanced by a linear–quadratic regulator whose gains are solved from the Riccati equation whenever you change a mass.</p>
+      <p>Every line on a plate has a meaning: springs are zigzags, dampers are pistons in cylinders, hatching marks a fixed support. Where a value can be computed live it is shown in the strip beneath the figure, substituted into its own equation.</p>
+      <p>Plates pause when they leave the screen. Use the speed menu to slow anything down, and the parameters drawer to break it.</p>
+    </div>
+  </section>
+</main>
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/plates-1.js"></script>
+<script src="/assets/js/plates-2.js"></script>
+<script src="/assets/js/plates-3.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

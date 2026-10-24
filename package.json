@@ -1,0 +1,10 @@
+{
+  "name": "the-art-of-physics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Twelve live, physically accurate simulations drawn as engineering-textbook plates: a half-car suspension, a cyclotron, the tumbling racket, chaotic pendulums, Kepler orbits and an RLC circuit.",
+  "scripts": {
+    "dev": "npx --yes serve@14.2.5 public -l 3000"
+  },
+  "license": "UNLICENSED"
+}

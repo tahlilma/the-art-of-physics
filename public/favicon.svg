@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.p{fill:#fff}.i{fill:#000}.s{stroke:#000}@media (prefers-color-scheme:dark){.p{fill:#15365F}.i{fill:#EEF4FF}.s{stroke:#EEF4FF}}</style>
+<circle class="p s" cx="32" cy="32" r="27" stroke-width="4.5"/>
+<path class="i" d="M32 32V5a27 27 0 0 1 27 27z"/>
+<path class="i" d="M32 32v27A27 27 0 0 1 5 32z"/>
+</svg>
